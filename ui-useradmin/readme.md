@@ -1,9 +1,9 @@
-
-unix Generate Token: 
+```
+#unix Generate Token: 
 kubectl -n kube-system describe secret $(kubectl -n kube-system get secret | grep admin-user | awk '{print $1}')
-
-Windows Generate Token: 
-
+```
+#Windows Generate Token: 
+```
 :Get the secret users info : >kubectl -n kube-system get secret
 c:\helm\ui-useradmin>kubectl -n kube-system get secret
 NAME                                             TYPE                                  DATA   AGE
@@ -25,10 +25,10 @@ generic-garbage-collector-token-6p6k8            kubernetes.io/service-account-t
 horizontal-pod-autoscaler-token-fhwcj            kubernetes.io/service-account-token   3      27m
 job-controller-token-2xqj4                       kubernetes.io/service-account-token   3      27m
 
+```
 
-
-Filter Scret
-c:\helm\ui-useradmin>kubectl -n kube-system describe secret admin-user-token-zsr4q
+#Filter Scret
+```c:\helm\ui-useradmin>kubectl -n kube-system describe secret admin-user-token-zsr4q
 Name:         admin-user-token-zsr4q
 Namespace:    kube-system
 Labels:       <none>
@@ -43,5 +43,5 @@ namespace:  11 bytes
 token:      eyJhbGciOiJSUzI1NiIsImtpZCI6IiJ9.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJrdWJlLXN5c3RlbSIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VjcmV0Lm5hbWUiOiJhZG1pbi11c2VyLXRva2VuLXpzcjRxIiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZXJ2aWNlLWFjY291bnQubmFtZSI6ImFkbWluLXVzZXIiLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3NlcnZpY2UtYWNjb3VudC51aWQiOiJhODZkOTI0ZC02MjZlLTQ3MmMtOGFmYi0yYjE0YmRhNmU3ZTUiLCJzdWIiOiJzeXN0ZW06c2VydmljZWFjY2
 91bnQ6a3ViZS1zeXN0ZW06YWRtaW4tdXNlciJ9.hjZXPzdmEJxzRZP0DDrsswd3sCzSUGEFpropHFEzu95XLAsOJVu-LpeQUcCnGj1UCA2rJY9wWrt2p1CjmPkbrNAeec7tTizMpRX600uWhuBllAcukyA4XlEinkYr0dgHdm9XCp6UnbQT1x8nERU12cRwl8J_7IJym5Lu0JdjvRqJ-gy4j7rz_AkRGKPN0mODkzN8Y4uRNlldWFRLH4jkqV2ZgmRtOYKR4iXMZYdUUKikX68gBGbl2lec6d_i-oTSJ6UgQVAJDedMHaGBMVfUmIuz6NR8PecWJInNA1nBUU06tzdu8QR-xKzOmGBtXTfXMhMmAWbBSFCkxXikj25FBQ
 ca.crt:     1066 bytes
+```
 
-c:\helm\ui-useradmin>k
